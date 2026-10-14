@@ -1,0 +1,24 @@
+#!/bin/sh
+set -eu
+
+install_root="/Library/Application Support/Squid"
+daemon_path="$install_root/squidd"
+plist_path="/Library/LaunchDaemons/com.squid.squidd.plist"
+
+if [ "$(id -u)" -ne 0 ]; then
+    echo "error: Squid's installer must run as root" >&2
+    exit 1
+fi
+
+/usr/sbin/chown -R root:wheel "$install_root"
+/bin/chmod 755 "$daemon_path"
+/bin/chmod 755 "$install_root"
+/bin/chmod 644 "$plist_path"
+/usr/sbin/chown root:wheel "$plist_path"
+
+/bin/launchctl bootout system/com.squid.squidd 2>/dev/null || true
+/bin/launchctl bootstrap system "$plist_path"
+/bin/launchctl enable system/com.squid.squidd
+
+echo "Squidd is installed and running as the root LaunchDaemon com.squid.squidd."
+exit 0

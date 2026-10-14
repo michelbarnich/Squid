@@ -1,0 +1,53 @@
+# Local tooling and editor state
+.codex/
+.opencode/
+.DS_Store
+.idea/
+.vscode/
+
+# Xcode user data and generated build output
+xcuserdata/
+DerivedData/
+.build/
+build/
+*.xcuserstate
+*.xcscmblueprint
+*.dSYM/
+*.dSYM.zip
+*.xcarchive/
+*.o
+*.a
+*.dylib
+*.swiftmodule
+
+# Compiled applications and distribution artifacts
+Products/
+*.app/
+*.framework/
+*.xcframework/
+*.ipa
+*.pkg
+*.dmg
+*.car
+
+# Packaging and installer output
+Packaging/*.pkg
+Packaging/*.dmg
+
+# Swift Package Manager local state
+.swiftpm/
+Packages/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.secrets
+*.pem
+*.key
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile

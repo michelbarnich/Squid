@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXCopyFilesBuildPhase section */
+		711B8F6C306FFE1C00EDC379 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolder = None;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		711B8F6E306FFE1D00EDC379 /* squidd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = squidd; sourceTree = BUILT_PRODUCTS_DIR; };
+		717524F1307E279400597E76 /* Squid-Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Squid-Manager-Info.plist"; sourceTree = "<group>"; };
+		71B671EF30712F29001FA186 /* liblibsquid.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibsquid.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		71EAD250307D088300995430 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		71EAD258307D0C7800995430 /* Squid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71EAD264307D0E2E00995430 /* com.squid.squidd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.squid.squidd.plist; sourceTree = "<group>"; };
+		71EAD265307D0E2E00995430 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = postinstall; sourceTree = "<group>"; };
+		71EAD266307D0E2E00995430 /* preinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = preinstall; sourceTree = "<group>"; };
+		71EAD267307D0E2E00995430 /* uninstall-squidd.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "uninstall-squidd.sh"; sourceTree = "<group>"; };
+		71EAD268307D0E2E00995430 /* build-package.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-package.sh"; sourceTree = "<group>"; };
+		71EAD269307D0E2E00995430 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		71EAD295307D21EB00995430 /* install-squidd.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-squidd.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		71B672033071396C001FA186 /* Exceptions for "libsquid" folder in "libsquid" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.c,
+				squid.h,
+				swizzle.c,
+			);
+			target = 71B671EE30712F29001FA186 /* libsquid */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		711B8F70306FFE1D00EDC379 /* squidd */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = squidd;
+			sourceTree = "<group>";
+		};
+		71B671F330712F3A001FA186 /* libsquid */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				71B672033071396C001FA186 /* Exceptions for "libsquid" folder in "libsquid" target */,
+			);
+			path = libsquid;
+			sourceTree = "<group>";
+		};
+		71EAD259307D0C7800995430 /* Squid Manager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Squid Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		711B8F6B306FFE1C00EDC379 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		71B671ED30712F29001FA186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		71EAD255307D0C7800995430 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		711B8F65306FFE1C00EDC379 = {
+			isa = PBXGroup;
+			children = (
+				717524F1307E279400597E76 /* Squid-Manager-Info.plist */,
+				71B671F330712F3A001FA186 /* libsquid */,
+				711B8F70306FFE1D00EDC379 /* squidd */,
+				71EAD250307D088300995430 /* .gitignore */,
+				71EAD259307D0C7800995430 /* Squid Manager */,
+				711B8F6F306FFE1D00EDC379 /* Products */,
+				71EAD263307D0E2E00995430 /* Packaging */,
+			);
+			sourceTree = "<group>";
+		};
+		711B8F6F306FFE1D00EDC379 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				711B8F6E306FFE1D00EDC379 /* squidd */,
+				71B671EF30712F29001FA186 /* liblibsquid.dylib */,
+				71EAD258307D0C7800995430 /* Squid.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71EAD263307D0E2E00995430 /* Packaging */ = {
+			isa = PBXGroup;
+			children = (
+				71EAD264307D0E2E00995430 /* com.squid.squidd.plist */,
+				71EAD265307D0E2E00995430 /* postinstall */,
+				71EAD266307D0E2E00995430 /* preinstall */,
+				71EAD267307D0E2E00995430 /* uninstall-squidd.sh */,
+				71EAD268307D0E2E00995430 /* build-package.sh */,
+				71EAD269307D0E2E00995430 /* README.md */,
+				71EAD295307D21EB00995430 /* install-squidd.sh */,
+			);
+			path = Packaging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		71B671EB30712F29001FA186 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			files = (
+			);
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		711B8F6D306FFE1C00EDC379 /* squidd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711B8F75306FFE1D00EDC379 /* Build configuration list for PBXNativeTarget "squidd" */;
+			buildPhases = (
+				711B8F6A306FFE1C00EDC379 /* Sources */,
+				711B8F6B306FFE1C00EDC379 /* Frameworks */,
+				711B8F6C306FFE1C00EDC379 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				711B8F70306FFE1D00EDC379 /* squidd */,
+				71B671F330712F3A001FA186 /* libsquid */,
+			);
+			name = squidd;
+			productName = Squid;
+			productReference = 711B8F6E306FFE1D00EDC379 /* squidd */;
+			productType = "com.apple.product-type.tool";
+		};
+		71B671EE30712F29001FA186 /* libsquid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71B671F030712F29001FA186 /* Build configuration list for PBXNativeTarget "libsquid" */;
+			buildPhases = (
+				71B671EB30712F29001FA186 /* Headers */,
+				71B671EC30712F29001FA186 /* Sources */,
+				71B671ED30712F29001FA186 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			name = libsquid;
+			productName = libsquid;
+			productReference = 71B671EF30712F29001FA186 /* liblibsquid.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		71EAD257307D0C7800995430 /* Squid Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71EAD260307D0C7900995430 /* Build configuration list for PBXNativeTarget "Squid Manager" */;
+			buildPhases = (
+				71EAD254307D0C7800995430 /* Sources */,
+				71EAD255307D0C7800995430 /* Frameworks */,
+				71EAD256307D0C7800995430 /* Resources */,
+			);
+			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				71EAD259307D0C7800995430 /* Squid Manager */,
+			);
+			name = "Squid Manager";
+			productName = "Squid Manager";
+			productReference = 71EAD258307D0C7800995430 /* Squid.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		711B8F66306FFE1C00EDC379 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					711B8F6D306FFE1C00EDC379 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					71B671EE30712F29001FA186 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					71EAD257307D0C7800995430 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 711B8F69306FFE1C00EDC379 /* Build configuration list for PBXProject "Squid" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 711B8F65306FFE1C00EDC379;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 711B8F6F306FFE1D00EDC379 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				711B8F6D306FFE1C00EDC379 /* squidd */,
+				71B671EE30712F29001FA186 /* libsquid */,
+				71EAD257307D0C7800995430 /* Squid Manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71EAD256307D0C7800995430 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		711B8F6A306FFE1C00EDC379 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		71B671EC30712F29001FA186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		71EAD254307D0C7800995430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		711B8F73306FFE1D00EDC379 /* Debug configuration for PBXProject "Squid" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS = NO;
+				ENABLE_C_BOUNDS_SAFETY = NO;
+				ENABLE_ENHANCED_SECURITY = NO;
+				ENABLE_HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		711B8F74306FFE1D00EDC379 /* Release configuration for PBXProject "Squid" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS = NO;
+				ENABLE_C_BOUNDS_SAFETY = NO;
+				ENABLE_ENHANCED_SECURITY = NO;
+				ENABLE_HARDWARE_CHECKED_POINTER_ARITHMETIC_SLICE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 27.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		711B8F76306FFE1D00EDC379 /* Debug configuration for PBXNativeTarget "squidd" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = YES;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+			};
+			name = Debug;
+		};
+		711B8F77306FFE1D00EDC379 /* Release configuration for PBXNativeTarget "squidd" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				AUTOMATION_APPLE_EVENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = NO;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = NO;
+				ENABLE_RESOURCE_ACCESS_CAMERA = NO;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = NO;
+				ENABLE_RESOURCE_ACCESS_LOCATION = NO;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = YES;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+			};
+			name = Release;
+		};
+		71B671F130712F29001FA186 /* Debug configuration for PBXNativeTarget "libsquid" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				OTHER_LDFLAGS = "-lobjc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		71B671F230712F29001FA186 /* Release configuration for PBXNativeTarget "libsquid" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJPUUEYD;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXECUTABLE_PREFIX = lib;
+				OTHER_LDFLAGS = "-lobjc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		71EAD261307D0C7900995430 /* Debug configuration for PBXNativeTarget "Squid Manager" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Squid.icon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Squid-Manager-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Squid;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.squid.Squid-Manager";
+				PRODUCT_NAME = Squid;
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Squid Manager/PrivilegedInstaller-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		71EAD262307D0C7900995430 /* Release configuration for PBXNativeTarget "Squid Manager" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Squid.icon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Squid-Manager-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Squid;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.squid.Squid-Manager";
+				PRODUCT_NAME = Squid;
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Squid Manager/PrivilegedInstaller-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		711B8F69306FFE1C00EDC379 /* Build configuration list for PBXProject "Squid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B8F73306FFE1D00EDC379 /* Debug configuration for PBXProject "Squid" */,
+				711B8F74306FFE1D00EDC379 /* Release configuration for PBXProject "Squid" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		711B8F75306FFE1D00EDC379 /* Build configuration list for PBXNativeTarget "squidd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B8F76306FFE1D00EDC379 /* Debug configuration for PBXNativeTarget "squidd" */,
+				711B8F77306FFE1D00EDC379 /* Release configuration for PBXNativeTarget "squidd" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		71B671F030712F29001FA186 /* Build configuration list for PBXNativeTarget "libsquid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71B671F130712F29001FA186 /* Debug configuration for PBXNativeTarget "libsquid" */,
+				71B671F230712F29001FA186 /* Release configuration for PBXNativeTarget "libsquid" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		71EAD260307D0C7900995430 /* Build configuration list for PBXNativeTarget "Squid Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71EAD261307D0C7900995430 /* Debug configuration for PBXNativeTarget "Squid Manager" */,
+				71EAD262307D0C7900995430 /* Release configuration for PBXNativeTarget "Squid Manager" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 711B8F66306FFE1C00EDC379 /* Project object */;
+	validationLevel = 1;
+}

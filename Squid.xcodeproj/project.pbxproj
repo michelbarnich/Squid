@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		711B8F6E306FFE1D00EDC379 /* squidd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = squidd; sourceTree = BUILT_PRODUCTS_DIR; };
 		717524F1307E279400597E76 /* Squid-Manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Squid-Manager-Info.plist"; sourceTree = "<group>"; };
+		71876CD13080F2080000F63A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		71B671EF30712F29001FA186 /* liblibsquid.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibsquid.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EAD250307D088300995430 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		71EAD258307D0C7800995430 /* Squid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Squid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +95,7 @@
 				71EAD259307D0C7800995430 /* Squid Manager */,
 				711B8F6F306FFE1D00EDC379 /* Products */,
 				71EAD263307D0E2E00995430 /* Packaging */,
+				71876CD13080F2080000F63A /* README.md */,
 			);
 			sourceTree = "<group>";
 		};

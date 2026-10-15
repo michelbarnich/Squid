@@ -61,6 +61,17 @@ The final application bundle embeds the manager, daemon, dynamic library, Launch
 - macOS
 - Xcode with the macOS SDK
 - Administrator access for installing or removing the daemon
+- Debugger restrictions disabled when using Squid's process inspection and injection features
+
+### Debugger restrictions
+
+Some Squid features require macOS debugger restrictions to be disabled. Check the current System Integrity Protection configuration from Terminal:
+
+```sh
+csrutil status
+```
+
+If the reported configuration still enables the debugger restrictions Squid needs, follow Apple's official [System Integrity Protection guide](https://support.apple.com/guide/security/system-integrity-protection-secb7ea06b49/web) for the supported RecoveryOS procedure and the security implications of changing it. Re-enable the protections when you no longer wish to use Squid.
 
 ## Build
 
